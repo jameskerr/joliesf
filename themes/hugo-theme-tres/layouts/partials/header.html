@@ -1,0 +1,19 @@
+<header class="site-header">
+  <img class="logo-image" src="{{ "logo_w_tagline.jpg" | relURL }}">
+  <h2 class="tagline">celebrating life with delightful desserts</h2>
+  <div class="cute-divider wrap"></div>
+  <div class="cute-divider thick wrap"></div>
+</header>
+
+<nav class='site-nav'>
+  <ul>
+    {{ $currentPage := . }}
+    {{ range .Site.Menus.main }}
+      <li class="{{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}current-page{{end}}">
+        <a href="{{.URL}}" title="{{ .Name }}">{{ .Name }}</a>
+      </li>
+    {{ end }}
+  </ul>
+</nav>
+
+<div class="color-line"></div>

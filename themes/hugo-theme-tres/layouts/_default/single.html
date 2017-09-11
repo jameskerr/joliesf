@@ -1,0 +1,15 @@
+<html>
+  {{ partial "head.html" . }}
+
+  <body>
+    {{ partial "header.html" . }}
+
+    <div class="content-container">
+      <main class="content wrap">
+          {{ .Content }}
+      </main>
+    </div>
+  </body>
+
+  {{ partial "footer.html" . }}
+</html>
