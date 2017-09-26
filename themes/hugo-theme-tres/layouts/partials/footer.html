@@ -3,6 +3,7 @@
 <script src="{{ "js/owl-carousel.min.js" | relURL }}"></script>
 
 <script>
+
   $('.owl-carousel').owlCarousel({
       loop:true,
       margin:10,
@@ -23,7 +24,10 @@
     get: 'user',
     userId: '1580317725',
     clientId: 'a569b1ca71614bc69dc95820fe377699',
-    accessToken: '6012257838.a569b1c.764b21bc678e49abb7e1fbff26f42614'
+    accessToken: '6012257838.a569b1c.764b21bc678e49abb7e1fbff26f42614',
+    resolution: 'standard_resolution',
+    sortBy: 'random',
+    after: function() { $('.loading').remove(); }
   });
 
   feed.run();

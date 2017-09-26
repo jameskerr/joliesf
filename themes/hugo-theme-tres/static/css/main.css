@@ -116,3 +116,20 @@ h1.page-title {
 .photo {
   background-color: lightgreen;
 }
+
+#instafeed {
+  text-align: center;
+  margin-top: 60px;
+}
+
+#instafeed .loading {
+
+}
+
+#instafeed img {
+  width: 28%;
+  margin: 12px 2%;
+  vertical-align: middle;
+  border: 3px solid black;
+  box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.3);
+}
