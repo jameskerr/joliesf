@@ -1,34 +1,3 @@
 <script src="{{ "js/jquery-3.2.1.min.js" | relURL }}"></script>
 <script src="{{ "js/instafeed.min.js"    | relURL }}"></script>
-<script src="{{ "js/owl-carousel.min.js" | relURL }}"></script>
-
-<script>
-
-  $('.owl-carousel').owlCarousel({
-      loop:true,
-      margin:10,
-      nav:true,
-      responsive:{
-          0:{
-              items:1
-          },
-          600:{
-              items:3
-          },
-          1000:{
-              items:5
-          }
-      }
-  })
-  var feed = new Instafeed({
-    get: 'user',
-    userId: '1580317725',
-    clientId: 'a569b1ca71614bc69dc95820fe377699',
-    accessToken: '6012257838.a569b1c.764b21bc678e49abb7e1fbff26f42614',
-    resolution: 'standard_resolution',
-    sortBy: 'random',
-    after: function() { $('.loading').remove(); }
-  });
-
-  feed.run();
-</script>
+<script src="{{ "js/main.js" | relURL }}"></script>

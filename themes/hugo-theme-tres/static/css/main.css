@@ -98,10 +98,16 @@ h1.page-title {
 
 .content img {
   display: block;
-  max-width: 50%;
+  width: 100%;
   margin: 0 auto;
   border: 1px solid #DCD9D9;
   padding: 6px;
+}
+
+@media(min-width: 500px) {
+  .content img {
+    max-width: 50%;
+  }
 }
 
 .color-line {
@@ -120,10 +126,7 @@ h1.page-title {
 #instafeed {
   text-align: center;
   margin-top: 60px;
-}
-
-#instafeed .loading {
-
+  min-height: 1000px;
 }
 
 #instafeed img {
@@ -132,4 +135,10 @@ h1.page-title {
   vertical-align: middle;
   border: 3px solid black;
   box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#instafeed img.show {
+  opacity: 1;
 }
