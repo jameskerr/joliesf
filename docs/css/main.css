@@ -1,0 +1,144 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #e48a2e;
+}
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', arial, sans-serif;
+  color: rgba(0,0,0,0.87);
+  line-height: 1.6;
+}
+
+.wrap {
+  max-width: 840px;
+  margin: 0 auto;
+}
+
+.site-header {
+  margin-top: 60px;
+}
+
+.logo-image {
+  display: block;
+  margin: 0 auto;
+  border: 3px solid black;
+}
+
+.tagline {
+  text-align: center;
+  font-size: 1.3em;
+  font-weight: 400;
+  margin-bottom: 60px;
+}
+
+.cute-divider {
+  background-color: #E0E0E0;
+  height: 1px;
+  margin-bottom: 2px;
+}
+
+.cute-divider.thick {
+  height: 2px;
+}
+
+.site-nav {
+  text-align: center;
+}
+
+.site-nav ul {
+  padding: 0;
+}
+
+.site-nav li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 24px;
+}
+
+.site-nav a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.site-nav .current-page {
+  text-decoration: underline;
+  font-weight: 900;
+}
+
+.content-container {
+  background-color: #f0f0f0;
+  padding: 12px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+h1.page-title {
+  text-align: left;
+  margin-bottom: 12px;
+}
+
+.content {
+  background-color: #ffffff;
+  box-shadow: 0px 0px 3px 3px #D7D4D4;
+  padding: 24px;
+}
+
+.content h1,
+.content h2,
+.content h3,
+.content h4,
+.content h5,
+.content h6 {
+  text-align: center;
+}
+
+.content img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  border: 1px solid #DCD9D9;
+  padding: 6px;
+}
+
+@media(min-width: 500px) {
+  .content img {
+    max-width: 50%;
+  }
+}
+
+.color-line {
+  background: linear-gradient(to right, #f1ad3a, #e48a2e);
+  height: 4px;
+}
+
+.site-footer {
+  background: linear-gradient(to right, #f1ad3a, #e48a2e);
+}
+
+.photo {
+  background-color: lightgreen;
+}
+
+#instafeed {
+  text-align: center;
+  margin-top: 60px;
+  min-height: 1000px;
+}
+
+#instafeed img {
+  width: 28%;
+  margin: 12px 2%;
+  vertical-align: middle;
+  border: 3px solid black;
+  box-shadow: 0px 0px 9px 3px rgba(0,0,0,0.3);
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+#instafeed img.show {
+  opacity: 1;
+}
